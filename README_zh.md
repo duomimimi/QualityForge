@@ -1,4 +1,8 @@
 # QualityForge
+[![self improvement](https://img.shields.io/badge/self-improvement-69F0AE?style=flat-square)](#)
+[![quality](https://img.shields.io/badge/quality-00E676?style=flat-square)](#)
+[![MIT协议](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
+[![版本1.0](https://img.shields.io/badge/version-1.0.0-orange?style=flat-square)](#)
 
 **让AI自我审查、自我改进。自动化。**
 
