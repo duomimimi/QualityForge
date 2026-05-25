@@ -1,4 +1,8 @@
 # QualityForge
+[![self improvement](https://img.shields.io/badge/self-improvement-69F0AE?style=flat-square)](#)
+[![quality](https://img.shields.io/badge/quality-00E676?style=flat-square)](#)
+[![MIT License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
+[![Version 1.0](https://img.shields.io/badge/version-1.0.0-orange?style=flat-square)](#)
 
 **Your AI Improves Itself. Automatically.**
 
