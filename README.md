@@ -1,141 +1,111 @@
 # QualityForge
 
-**Your AI improves itself. Automatically.**
+**让AI自我审查、自我改进。自动化。**
 
-*Self-review. Self-improve. Self-perfect.*
-
----
-
-## The Hook
-
-```
-"What if your AI could review itself
- and improve without human intervention?"
-```
-
-**The Problem:**
-
-AI quality degrades over time:
-- Outputs become repetitive
-- Errors go uncorrected
-- Quality standards slip as usage scales
-- Human review becomes a bottleneck
-
-Traditional quality assurance is manual and slow. You can't scale human reviewers.
+*自我Review。自我优化。自我完美。*
 
 ---
 
-## The Core Insight
+当你的AI系统每天产出1000条输出，你会怎么做？
 
-**Quality isn't a destination. It's a process.**
+人工审核？不可能规模化。
 
-QualityForge introduces the self-refinement loop:
-- AI outputs are scored automatically
-- Low-quality outputs trigger regeneration
-- Patterns of errors are identified and fixed
-- The system learns from its own mistakes
+放任不管？质量会逐渐下降。
+
+大多数团队选择了中间路线：定期人工抽检。
+
+但AI的错误不会等你抽检。它直接到达用户。
+
+**QualityForge 让质量保证从人工变为自动。**
 
 ---
 
-## The Self-Refinement Loop
+## 核心洞察
+
+质量不是状态，是过程。
+
+QualityForge 引入**自我精炼循环**：
+
+- AI输出自动评分
+- 低质量输出触发重新生成
+- 错误模式被识别并永久修复
+- 系统从自己的错误中学习
+
+---
+
+## 工作原理
 
 ```
-[Output] → [Score] → [Threshold Check]
+[输出] → [评分] → [阈值检查]
     ↓            ↓
-[Regenerate] ← [Fail] → [Report Issue]
+[重新生成] ← [不通过] → [报告问题]
     ↓
-[Improved Output] → [Re-score] → [Pass] → [Deliver]
+[改进输出] → [再次评分] → [通过] → [交付]
 ```
 
-### Scoring Dimensions
+**5个评分维度：**
 
-1. **Completeness** — Does it fully address the query?
-2. **Accuracy** — Are facts correct and sources verified?
-3. **Coherence** — Is reasoning logical and well-structured?
-4. **Relevance** — Is the response appropriate and helpful?
-5. **Depth** — Does it provide surface-level or deep analysis?
-
----
-
-## The Architecture
-
-```
-┌─────────────────────────────────────────────────────────┐
-│                   QUALITY ENGINE                        │
-│   [Scorer] [Threshold] [Regenerator] [Tracker]         │
-├─────────────────────────────────────────────────────────┤
-│                   REFINE LOOP                          │
-│   Output → Score → Fail? → Regenerate → Re-score       │
-├─────────────────────────────────────────────────────────┤
-│                   PATTERN LEARNER                       │
-│   Identifies systematic errors for permanent fix       │
-└─────────────────────────────────────────────────────────┘
-```
+1. **完整性** — 是否完整回应了查询？
+2. **准确性** — 事实是否正确，来源是否验证？
+3. **连贯性** — 推理是否逻辑严密、结构清晰？
+4. **相关性** — 回答是否恰当、有帮助？
+5. **深度** — 是表面分析还是深度分析？
 
 ---
 
-## Automated Quality Standards
+## 自动化质量标准
 
-QualityForge enforces:
-- **Minimum scores** per dimension (configurable)
-- **Overall quality threshold** before delivery
-- **Pattern tracking** for systematic improvements
-- **Auto-correction** when thresholds aren't met
+QualityForge 强制执行：
 
----
-
-## The Spotlight
-
-**QualityForge turns quality assurance from manual to automatic.**
-
-- Instead of hoping for good outputs, you guarantee them
-- Instead of reviewing after the fact, you prevent bad outputs
-- Instead of fixing errors one-by-one, you fix root causes
-
-**Core belief**: *Quality improves itself when given the tools.*
+- 每维度最低分数（可配置）
+- 交付前的总体质量阈值
+- 系统性错误的模式追踪
+- 未达阈值时自动重写
 
 ---
 
-## Quick Start Concept
+## 快速开始
 
 ```python
-# QualityForge in action
-result = ai.think("Explain quantum computing")
+# QualityForge 运行中
+result = ai.think("解释量子计算")
 quality = qualityforge.score(result)
 
 if quality.overall < 0.8:
     result = qualityforge.regenerate(result, focus=quality.weak_dimensions)
-    # Re-score until passing
+    # 重新评分，直到通过
 
-deliver(result)  # Always meets quality threshold
+deliver(result)  # 始终达到质量阈值
 ```
 
 ---
 
-## What's Inside
+## 理念
 
-```
-qualityforge/
-├── README.md           # This file
-├── SCORING.md          # 5-dimension quality model
-├── REFINE_LOOP.md      # Self-correction methodology
-├── THRESHOLDS.md       # Setting and adjusting standards
-└── EXAMPLES/           # Real-world quality improvements
-```
+**我们相信：**
+- 质量不是人工检查出来的，是系统设计出来的
+- AI可以学会识别和纠正自己的错误
+- 自我改进是可能的，只要给出正确的工具
 
----
-
-## The Hook (Realized)
-
-```
-Before QualityForge:  "I hope this output is good enough."
-After QualityForge:   "This output is guaranteed good."
-```
-
-That's the power of self-improving quality.
+**QualityForge 适合：**
+- 需要规模化但保持高质量的AI系统
+- 不能容忍错误到达用户的场景
+- 想从"救火式"质量控制转为预防式质量控制
 
 ---
 
-*Quality is not a state. It's a process.*
+## 爆点
 
-**QualityForge** — *Where AI quality is self-reinforced.*
+> "与其希望输出是好的，不如保证输出是好的。"
+
+质量改进不是一次性的工作，是持续循环的过程。
+
+QualityForge 让这个循环自动运行。
+
+这就是自我改进的力量。
+
+---
+
+*质量不是状态，是过程。*
+
+**QualityForge** — *让AI质量自我强化。*
